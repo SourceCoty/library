@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container" id="window">
+        <div class="sidebar">
+            <div class="header">LIBRARY</div>
+            <form id="reader-form">
+                <fieldset>
+                    <div class="info">
+                        <label for="title"></label>
+                        <input id="title" name="title" type="text" placeholder="What is the title of the book?">
+                    </div>
+                    <div class="info">
+                        <label for="author"></label>
+                        <input id="author" name="author" type="text" placeholder="Who is the author of the book?">
+                    </div>
+                    <div class="info">
+                        <label for="pages"></label>
+                        <input id="pages" name="pages" type="text" placeholder="How many pages in the book?">
+                    </div>
+                    <div class="checkbox">
+                        <input type="hidden" value=false name="read">
+                        <input id="read" type="checkbox" name="read" value=true>
+                        <label for="read" name="read">I have already read the book!</label>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="button">
+                        <button class="button" type="submit" id="submit">ADD A NEW BOOK</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="foot-note">Developed by Coty Massmann</div>
+        </div>
+        <div class="main">
+            <div id="target"></div>
+            <table id="table">
+                <tr class="head">
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>PAGES</th>
+                    <th>STATUS</th>
+                    <th>REMOVE</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
